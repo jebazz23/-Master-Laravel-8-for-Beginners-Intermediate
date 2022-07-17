@@ -89,7 +89,7 @@ class UserController extends Controller
      */
     public function update(UpdateUser $request, User $user)
     {
-            dd('ola');
+            dd($request);
       
        if($request->hasFile('avatar')){
         $path = $request->file('avatar')->store('avatars');

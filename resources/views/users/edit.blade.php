@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
     <form method="POST" enctype="multipart/form-data" action="{{ route('users.update', ['user' => $user->id]) }}"
         class="form-horizontal">
         @csrf
@@ -13,15 +12,16 @@
                 <img src=""  class="img-thumbnail avatar" />
                 <div class="card mt-4">
                     <div class="card-body">
-                        l<h6>Upload a different photo</h6>
-                        <input type="file" class="form-control-file" name="avatar" />
+                        <h6>Upload a different photo</h6>
+                        <input class="form-control-file" type="file"  name="ava" />
                     </div>
                 </div>
             </div>
             <div class="col-8">
                 <div class="form-group">
-                    <label for="name">Name: </label>
+                    <label>Name: </label>
                     <input type="text" class="form-control" value="" name="name" />
+                  
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Save Changes" />
@@ -29,5 +29,4 @@
             </div>
         </div>
     </form>
-</div>
 @endsection
