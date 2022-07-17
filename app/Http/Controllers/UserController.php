@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-
+    
     public function __construct()
     {
         $this->middleware('auth');
@@ -89,7 +89,7 @@ class UserController extends Controller
      */
     public function update(UpdateUser $request, User $user)
     {
-
+            dd('ola');
       
        if($request->hasFile('avatar')){
         $path = $request->file('avatar')->store('avatars');
