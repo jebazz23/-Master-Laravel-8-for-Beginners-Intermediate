@@ -90,7 +90,7 @@ class UserController extends Controller
     public function update(UpdateUser $request, User $user)
     {
 
-        dd($request);
+      
        if($request->hasFile('avatar')){
         $path = $request->file('avatar')->store('avatars');
 
@@ -103,9 +103,7 @@ class UserController extends Controller
             );
         }
        }
-       return redirect()
-       ->back()
-       ->withStatus('Profile image was updated!');
+       return redirect()->back()->withStatus('Profile image was updated!');
     }
 
     /**
