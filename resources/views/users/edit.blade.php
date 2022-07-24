@@ -9,7 +9,7 @@
 
         <div class="row">
             <div class="col-4">
-                <img src=""  class="img-thumbnail avtar" />
+                <img src="{{  $user->image ? $user->image->url() : '' }}"  class="img-thumbnail avtar" />
                 <div class="card mt-4">
                     <div class="card-body">
                         <h6>Upload a different photo</h6>
@@ -23,6 +23,8 @@
                     <input type="text" class="form-control" value="" name="name" />
                   
                 </div>
+
+                
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Save Changes" />
                 </div>
