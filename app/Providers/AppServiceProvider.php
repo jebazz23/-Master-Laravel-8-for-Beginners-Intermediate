@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        Schema::defaultStringLength(191);
         // view()->composer('*', ActivityComposer::class);
        view()->composer(['posts.index','posts.show' ], ActivityComposer::class);
     }

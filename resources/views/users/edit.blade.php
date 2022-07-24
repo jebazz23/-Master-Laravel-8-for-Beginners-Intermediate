@@ -9,11 +9,11 @@
 
         <div class="row">
             <div class="col-4">
-                <img src=""  class="img-thumbnail avatar" />
+                <img src=""  class="img-thumbnail avtar" />
                 <div class="card mt-4">
                     <div class="card-body">
                         <h6>Upload a different photo</h6>
-                        <input class="form-control-file" type="file"  name="ava" />
+                        <input class="form-control-file" type="file"  name="avtar" />
                     </div>
                 </div>
             </div>

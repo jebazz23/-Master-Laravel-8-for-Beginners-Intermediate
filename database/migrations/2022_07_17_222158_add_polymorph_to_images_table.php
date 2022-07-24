@@ -14,7 +14,7 @@ class AddPolymorphToImagesTable extends Migration
     public function up()
     {
         Schema::table('images', function (Blueprint $table) {
-            $table->dropColumn('blog_post_id');
+           $table->dropColumn('blog_post_id');
            $table->morphs('imageable');
         });
     }
